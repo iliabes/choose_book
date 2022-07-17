@@ -5,7 +5,7 @@ import { useState } from 'react';
 
 function Header () {
 let [show,setShow] = useState(true)
-function changeTheme(){    
+function switchMenu(){    
     setShow(!show)
 }
 
@@ -17,10 +17,10 @@ function changeTheme(){
                 <GenerateSvg   id={'logo'}/>
                 </a>
             </div>
-            <div  onClick={()=>{changeTheme()}} className={s.cont_icon}>
+            <div  onClick={()=>{switchMenu()}} className={s.cont_icon}>
                 <GenerateSvg    id={'settings'}/>
             </div>
-            <Menu changeTheme={changeTheme} show={show}/>
+            <Menu switchMenu={switchMenu} show={show}/>
         </div>
     )
 }

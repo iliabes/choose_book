@@ -1,27 +1,20 @@
-import { Image_block } from "./components/Image_block/Image_block"
+import ImageBlock  from "./components/ImageBlock/Image_block"
 import { Questions } from "./components/Questions/Questions"
 import s from './home.module.sass'
 import { useAppSelector ,useAppDispatch} from "../../hooks/store"
 import steps from "../../bd/steps"
 import { changeAnimate ,changeId,changeAnimateBgImage} from "../../store/slices/slice";
-
+import Book_block from "./components/Book_block/Book_block"
+import Description from "./components/Description/Description"
 
 
 
 const Home = () => {
     let step = useAppSelector(state => (state.bookSlice))
-    console.log('step :', step.animate);
+    let hz = 'step'
     const dispath = useAppDispatch()
-    
 
-    let questions = {
-        id:steps[step.id].id,
-        stepQuset:steps[step.id].questions,
-        stepAnsvers:steps[step.id].ansvers,
-        funcDispatch:changeSlide
-    }
-    
-    console.log(questions)
+
 
     function changeSlide(num:number){
         dispath(changeAnimate(true))
@@ -35,17 +28,24 @@ const Home = () => {
         },3000)
     }
 
-    function changeSlide2(){
-        // dispath(changeAnimate(false))
-        dispath(changeAnimateBgImage(true))
-    }
-    return(
-        <div className={s.home}>
-            <Image_block idImage={step.id}  />
-            <Questions qustion={questions} />
-            
-        </div>
-    )
+
+
+    if(hz === 'step'){
+        return(
+            <div className={s.home}>
+                <ImageBlock idImage={step.id}  />
+                <Questions ansvers={steps[step.id].ansvers} question={steps[step.id].questions} funcDispatch={changeSlide} />
+            </div>
+        )
+        }else{
+            return(
+                <div className={s.home}>
+                <Book_block/>
+                <Description/>
+                </div>
+            )
+        }
+
 }
-// dispath(changeAnimate(true))
+
 export default  Home

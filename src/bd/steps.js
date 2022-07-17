@@ -25,7 +25,7 @@
         ansvers:[
             {   
                 ansverID:0,
-                ansver:   'Да'                      
+                ansver:   'books[0]'                      
             },
             {   
                 ansverID:0,
