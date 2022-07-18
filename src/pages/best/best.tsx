@@ -7,14 +7,12 @@ import { useState } from 'react';
 
 
 const Best = () => {
-    let cards = books;
     let [anim,setAnim] = useState(false) 
     let [idBook,setIdBook] = useState(0) 
 
     function switcPopUp(num:number){
         setAnim(!anim)
         setIdBook(num)
-        console.log(anim)
     }
 
     return(
@@ -27,7 +25,6 @@ const Best = () => {
             <div className={s.cont_best}>
             {books.map((item,index)=>(<Card func={switcPopUp} onClick={()=>{alert()}} key={index} genre={item.genre}   id={item.id} title={item.title} autor={item.autor} description={item.description}/>))}
             </div>
-           
         </div>
     )
 }

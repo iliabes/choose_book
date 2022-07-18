@@ -1,6 +1,5 @@
 .menu
     background-color: var(--compponent-bg-default)
-
     bottom:  -95vh
     left: 0
     top: -30px
@@ -25,6 +24,11 @@
             font-size: 24px
             letter-spacing: normal
             text-decoration: none
+            cursor: pointer
+            border-radius: 4px
+            transition: 1s
+            &:hover
+                box-shadow: 10px -10px teal
         .item_cancel
             position: absolute
             padding: 5px
@@ -32,6 +36,7 @@
             top: 20px
             border-radius: 3px
             background-color: var(--compponent-btn-default)
+            
             
 
 .menu_inactive

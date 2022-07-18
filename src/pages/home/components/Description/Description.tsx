@@ -13,8 +13,9 @@ import { changeId} from "../../../../store/slices/slice";
     console.log('props :', props);
         return (
             <div className={s.description_cont}>
-                <button onClick={cnahgeId}>again</button>
+                
                 <p className={s.description}>{props.description}</p>
+                <button className={s.again} onClick={cnahgeId}>Поробовать снова</button>
                 <h3 className={s.fant_title}>Посмотреть похожие на фатлаб</h3>
                 {/* <button className={s.fant_btn}>Алекс Кош «Огненный Факультет» (2005, роман)</button>
                 <button className={s.fant_btn}>Робин Хобб «Ученик убийцы» (1995, роман))</button>

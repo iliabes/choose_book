@@ -18,9 +18,8 @@ function Menu (props:any) {
         <div className={classNames(s.menu,{[s.menu_inactive]:!showMenu})}>
             <ul className={s.menu_cont}>
                 <a onClick={()=>{switchMode()}} className={s.menu_item}>Сменить тему</a>
-                <a className={s.menu_item}>Топ книг</a>
+                <a href='/best' className={s.menu_item}>Топ книг</a>
                 <a className={s.menu_item}>Случайная книга</a>
-                <a className={s.menu_item} >Выбрать книгу</a>
                 <a href='/home' className={s.menu_item} >Выбрать книгу</a>
                 <a onClick={()=>{props.switchMenu()}} className={s.item_cancel} >x</a>
             </ul>

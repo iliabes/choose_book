@@ -7,16 +7,18 @@
     background-color: var(--compponent-bg-default)
     box-sizing: border-box
     .window
-        overflow: hidden
-        position: relative
+        width: 100%
 
-
+        // position: relative
+        display: flex
+        justify-content: center
+        margin: 0
         .book_block
             padding: 10px
             height: relative
             display: flex
             flex-direction: column
-            justify-content: start 
+            justify-content: center 
             align-items: center
             transition: 1s
             height: 50vh
@@ -24,8 +26,8 @@
             // transform: translateX(100%)
             .bg_image
 
-                width: 45%
-                height: 55%
+                width: 200px
+                height: 250px
                 border: 2px solid #2ab5a0
                 border-radius: 5px
             .autor
@@ -69,11 +71,11 @@
       
       height: 100%
       .window 
-        width: 50vw
         .book_block
           height: 100vh
           .bg_image
-              width: 90%
+              width: 300px
+              height:  450px
               margin-top: 33px
 
 @media screen and (min-width: 1200px)
