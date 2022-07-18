@@ -12,10 +12,11 @@
 
 
         .book_block
+            padding: 10px
             height: relative
             display: flex
             flex-direction: column
-            justify-content: center 
+            justify-content: start 
             align-items: center
             transition: 1s
             height: 50vh
@@ -23,8 +24,8 @@
             // transform: translateX(100%)
             .bg_image
 
-                width: 230px
-                height:250px
+                width: 45%
+                height: 55%
                 border: 2px solid #2ab5a0
                 border-radius: 5px
             .autor
@@ -63,12 +64,22 @@
   to 
     left: 0
 
-
+@media screen and (min-width: 480px)
+  .image_block
+      
+      height: 100%
+      .window 
+        width: 50vw
+        .book_block
+          height: 100vh
+          .bg_image
+              width: 90%
+              margin-top: 33px
 
 @media screen and (min-width: 1200px)
     .image_block
         height: 100%
-        .window .main_container
+        .window .book_block
           height: 100vh
 
 

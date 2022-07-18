@@ -1,21 +1,29 @@
 
 import s from './Description.module.sass'
+import { useAppDispatch} from "../../../../hooks/store"
+import { changeId} from "../../../../store/slices/slice";
 
+ const Description =  (props:any) => {
+    const dispath = useAppDispatch()
 
-
- const Description =  () => {
-    return (
-         <div className={s.description_cont}>
-            <p className={s.description}>Однажды юный Квоут, эдема руэ, актёр из бродячей труппы и ученик арканиста, услышал от своего отца о чандрианах — странных и страшных демонах, то ли реальных существах, то ли героях легенд и детских песенок-страшилок. Никто не догадывался, что песня о них будет стоить родителям Квоута и всей труппе жизни, а его самого толкнёт на дорогу, полную приключений и опасностей. И кем бы он ни был — бродяжкой, студентом Университета или трактирщиком, — он будет разыскивать след ужасных существ, встреченных однажды ночью на пепелище, где сгорело его беззаботное детство.</p>
-            <h3 className={s.fant_title}>Посмотреть похожие на фатлаб</h3>
-            <button className={s.fant_btn}>Алекс Кош «Огненный Факультет» (2005, роман)</button>
-            <button className={s.fant_btn}>Робин Хобб «Ученик убийцы» (1995, роман))</button>
-            <button className={s.fant_btn}>Алекс Кош «Огненный Факультет» (2005, роман)</button>
-            <button className={s.fant_btn}>Алексей Пехов «Хроники Сиалы» (2003, роман-эпопея)</button>
-            
-        </div>
-    )
-}
+    function cnahgeId(){
+        dispath(changeId(['step',0]))
+        
+    }
+    console.log('props :', props);
+        return (
+            <div className={s.description_cont}>
+                <button onClick={cnahgeId}>again</button>
+                <p className={s.description}>{props.description}</p>
+                <h3 className={s.fant_title}>Посмотреть похожие на фатлаб</h3>
+                {/* <button className={s.fant_btn}>Алекс Кош «Огненный Факультет» (2005, роман)</button>
+                <button className={s.fant_btn}>Робин Хобб «Ученик убийцы» (1995, роман))</button>
+                <button className={s.fant_btn}>Алекс Кош «Огненный Факультет» (2005, роман)</button>
+                <button className={s.fant_btn}>Алексей Пехов «Хроники Сиалы» (2003, роман-эпопея)</button> */}
+                {props.simularbooks.map((item:any,index:any)=>(<button key={index} className={s.fant_btn}>{item.autor}{item.title}</button>))}
+            </div>
+        )
+    }
 
 export default Description
 

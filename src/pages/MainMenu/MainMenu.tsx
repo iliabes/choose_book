@@ -15,7 +15,7 @@ const MainMenu = () => {
     return(
     <div className={s.main_menu}>
         <ul className={s.menu}>
-        <a className={s.menu_item}>Топ книг</a>
+        <a className={s.menu_item} href='/best'>Топ книг</a>
         <a className={s.menu_item}>Случайная книга</a>
         <a className={s.menu_item} href='/home'>Выбрать книгу</a>
         <a className={s.menu_item} onClick={switchMode} >Сменить тему</a>

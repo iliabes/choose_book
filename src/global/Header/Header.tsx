@@ -12,11 +12,11 @@ function switchMenu(){
 
     return (
         <div className={s.header}>
-            <div  className={s.cont_icon}>
-                <a href='/'>
-                <GenerateSvg   id={'logo'}/>
+           
+                <a className={s.cont_icon} href='/'>
+                < GenerateSvg   id={'logo'}/>
                 </a>
-            </div>
+
             <div  onClick={()=>{switchMenu()}} className={s.cont_icon}>
                 <GenerateSvg    id={'settings'}/>
             </div>

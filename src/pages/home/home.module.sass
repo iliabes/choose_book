@@ -7,10 +7,29 @@
     // overflow: hidden
     .btn
         z-index: 999
+    .blue_circle
+        width: 30px
+        height: 30px
+        background-color: var(--compponent-btn-default)
+        position: absolute
+        z-index: 999px
+        border-radius: 30px
+        opacity: 0
+        transition: 2s
+
+    .blue_circle_active
+        opacity: 1
+        transform: scale(100)
+
+@media screen and (min-width: 480px)
+    .home
+        flex-direction: row
 
 @media screen and (min-width: 1200px)
     .home
         flex-direction: row
+
+
 
 
 

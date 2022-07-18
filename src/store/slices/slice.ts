@@ -3,7 +3,7 @@ import type { PayloadAction } from '@reduxjs/toolkit'
 import { bookState } from '../../type/type'
 
 const initialState:bookState = { 
-    id:0,
+    id:['step',0],
     animate:false,
     animateBgImage:false,
     popUp:{
@@ -17,9 +17,9 @@ export const bookSlice = createSlice({
 name: 'counter',
 initialState,
 reducers: {
-    changeId(state,action: PayloadAction<number>) {
-    
-   
+    changeId(state,action: PayloadAction<any>) {
+        console.log('act',action.payload);
+        
         state.id = action.payload
         console.log('state :', state.id);
     },

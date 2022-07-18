@@ -7,9 +7,10 @@ import { useAppSelector } from "../../../../hooks/store"
 
 export const ImageBlock =  ({idImage}:any) => {
     let step = useAppSelector(state => (state.bookSlice))    
+
     let animate = step.animate
     let animateBgImage = step.animateBgImage
-    let bg = step.id
+    let bg = step.id[1]
 
     return (
         <div className={s.image_block}>

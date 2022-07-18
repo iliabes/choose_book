@@ -15,17 +15,22 @@
     transition: 1s
 
     .cont_icon
-        margin: 0 5px
-        width: 46px
-        height: 30px
+        margin: 6px 5px
         display: flex
         align-items: center
         justify-content: center
-        background-color: #202833
+        border: 3px solid var(--compponent-footer-default)
+        border-radius: 50px
+        background-color: var(--compponent-footer-default)
+        transition: 1s
+        &:hover
+            border-color: #cfcf18
         svg
-            stroke: #66FCF1
-            width: 20px
-            height: 20px
+            padding: 5px
+            width: 25px
+            height: 25px
+
+        
     .btn
         background-color: #8b0d0d
         border-radius: 10px
@@ -41,3 +46,14 @@
 
 .icon-logo
     fill: red
+
+.link_svg
+    margin-top: 10px
+
+
+
+@media screen and (min-width: 480px)
+    .header
+        margin-top: 5px
+
+

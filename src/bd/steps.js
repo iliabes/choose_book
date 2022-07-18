@@ -6,15 +6,15 @@
         questions:'Фантастика или фентези ?',
         ansvers:[
             {   
-                ansverID:1,
+                ansverID:['step', 1],
                 ansver:   'Фентези'                      
             },
             {   
-                ansverID:2,
+                ansverID:['step', 2],
                 ansver:   'Фантастика'                      
             },
             {   
-                ansverID:3,
+                ansverID:['step', 3,],
                 ansver:   'Ни то не другое'                      
             },
         ]
@@ -24,11 +24,11 @@
         questions:'Ты расттроешся если не найдеш Гарри Потера ?',
         ansvers:[
             {   
-                ansverID:0,
-                ansver:   'books[0]'                      
+                ansverID:['book', 0],
+                ansver:   'Да'                      
             },
             {   
-                ansverID:0,
+                ansverID:['step', 4],
                 ansver:   'Нет'                      
             }
         ]
@@ -38,15 +38,15 @@
         questions:'Киберпанк ?',
         ansvers:[
             {   
-                ansverID:0,
+                ansverID:['step', 0],
                 ansver:   'Да'                      
             },
             {   
-                ansverID:0,
+                ansverID:['step', 0],
                 ansver:   'Нет'                      
             },
             {   
-                ansverID:0,
+                ansverID:['step', 0],
                 ansver:   'Может быть'                      
             }
 
@@ -57,16 +57,34 @@
         questions:'Что выбереш ?',
         ansvers:[
             {   
-                ansverID:0,
+                ansverID:['step', 0],
                 ansver:   'Можно и то и другое'                      
             },
             {   
-                ansverID:0,
+                ansverID:['step', 0],
                 ansver:   'Я читаю только книги с картинками'                      
             },
             {   
-                ansverID:0,
+                ansverID:['step', 0],
                 ansver:   'Мне не нравится высе вышеперечисленное'                      
+            }
+        ]
+    },
+    {
+        id:4,
+        questions:'Фентези жанр для вас новый ?',
+        ansvers:[
+            {   
+                ansverID:['step', 0],
+                ansver:   'Да я совсем его не читал'                      
+            },
+            {   
+                ansverID:['step', 0],
+                ansver:   'Нет , он мне уже надоел'                      
+            },
+            {   
+                ansverID:['book', 1],
+                ansver:   'Волшебник страны оз в счет ?'                      
             }
         ]
     }

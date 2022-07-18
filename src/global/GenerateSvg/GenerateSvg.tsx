@@ -1,4 +1,4 @@
-import './GenerateSvg.sass'
+import s from './GenerateSvg.module.sass'
 
 
 export interface StandardComponentProps {
@@ -9,9 +9,34 @@ export interface StandardComponentProps {
 export default function GenerateSvg({id}: StandardComponentProps) {
 switch (id) {
     case 'logo':
-      return <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <circle className="icon-logo"  cx="10" cy="10" r="9.5" fill="none" stroke="#66FCF1"/>
-      </svg>
+      return <svg  className={s.logo} version="1.0" xmlns="http://www.w3.org/2000/svg"
+      width="24.000000pt" height="24.000000pt" viewBox="0 0 24.000000 24.000000"
+      preserveAspectRatio="xMidYMid meet">
+     
+     <g transform="translate(0.000000,24.000000) scale(0.100000,-0.100000)"
+     fill="#000000" stroke="none">
+     <path d="M50 226 c0 -12 5 -16 14 -13 9 3 21 -4 30 -19 18 -27 15 -29 -17 -14
+     -22 10 -22 10 1 -6 20 -15 22 -25 22 -95 0 -72 2 -79 20 -79 18 0 20 7 20 79
+     0 70 2 80 23 95 l22 17 -23 -12 c-13 -6 -25 -9 -27 -7 -5 4 25 44 30 41 14 -8
+     25 -1 25 15 0 14 -2 15 -10 2 -5 -8 -10 -11 -10 -6 0 5 -11 -1 -25 -14 l-25
+     -23 -25 23 c-14 13 -25 19 -25 14 0 -5 -5 -2 -10 6 -8 13 -10 12 -10 -4z m80
+     -136 c0 -27 -4 -50 -10 -50 -5 0 -10 23 -10 50 0 28 5 50 10 50 6 0 10 -22 10
+     -50z m0 -70 c0 -5 -4 -10 -10 -10 -5 0 -10 5 -10 10 0 6 5 10 10 10 6 0 10 -4
+     10 -10z"/>
+     <path d="M12 221 c-9 -5 -12 -30 -10 -86 3 -77 4 -79 35 -98 18 -10 33 -16 33
+     -13 0 3 -13 12 -30 21 -29 15 -30 17 -30 91 0 74 0 75 23 64 20 -10 21 -10 4
+     3 -14 11 -15 16 -5 20 7 3 9 6 3 6 -5 0 -16 -3 -23 -8z"/>
+     <path d="M208 223 c10 -4 9 -9 -5 -20 -17 -13 -16 -13 4 -3 21 10 22 8 26 -47
+     l3 -58 2 61 c2 59 -7 77 -36 73 -4 0 -1 -3 6 -6z"/>
+     <path d="M195 165 c-19 -14 -19 -15 -1 -8 15 5 17 3 11 -8 -6 -11 -5 -11 5 -2
+     21 19 8 36 -15 18z"/>
+     <path d="M153 135 c-8 -23 1 -27 23 -10 19 15 19 15 0 8 -13 -4 -17 -3 -12 5
+     4 7 5 12 1 12 -3 0 -8 -7 -12 -15z"/>
+     <path d="M219 61 c-9 -9 -24 -22 -35 -29 -10 -7 -5 -6 13 3 17 8 35 20 38 26
+     11 17 1 17 -16 0z"/>
+     </g>
+     </svg>
+     
 
     case 'settings':
       return <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
