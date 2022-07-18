@@ -1,22 +1,23 @@
-import s from './card.module.sass'
+import s from './popUp.module.sass'
+import classNames from 'classnames'
+import books from '../../../../bd/books'
 
-const popUp = () => {
+const PopUp = (props:any) => {
+    console.log('popUp',props.anim)
+    let book = books[props.id]
     return(
-        <div className={s.popUp}>
-            <div className={s.cord_cont}>
-                <div className={s.left_block}>
-                    <img src={require('./../../../../assets/img/books/0.webp')} alt="" />
-                </div>
-                <div className={s.right_block}>
-                    <h2 className={s.autor}>Ден Симонс</h2>
-                    <p className={s.autor}>Гиперион</p>
-                </div>
-            </div>
-                <div className={s.bottom_block}>
-                    <p className={s.genre}>Фантастика</p>
-                </div>
+        <div  className={classNames(s.popUp,{[s.popUp_active]:props.anim})}>
+            
+                    <h2 className={s.autor}>{books[props.id].autor}</h2>
+                    <img className={s.book_img} src={require(`./../../../../assets/img/books/${props.id}.webp`)} alt="" />
+                    <p className={s.title}>{books[props.id].title}</p>
+     
+                    <p className={s.description}>{books[props.id].description}</p>
+                    {/* <p className={s.genre}>{books[props.id].genre}</p> */}
+                    <button className={s.cancel} onClick={()=>{props.func(props.id)}}>x</button>
+              
         </div>
     )
 }
 
-export default  popUp
+export default  PopUp

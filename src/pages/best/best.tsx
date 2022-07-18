@@ -1,23 +1,33 @@
 import s from './best.module.sass'
 import Card from './components/card/card'
+import books from '../../bd/books';
+import PopUp from './components/popUp/popUp';
+import { useState } from 'react';
+
+
 
 const Best = () => {
+    let cards = books;
+    let [anim,setAnim] = useState(false) 
+    let [idBook,setIdBook] = useState(0) 
+
+    function switcPopUp(num:number){
+        setAnim(!anim)
+        setIdBook(num)
+        console.log(anim)
+    }
+
     return(
         <div className={s.best}>
+            <PopUp func={switcPopUp} id={idBook} anim={anim}/>
             <div className={s.top_block}>
             <h1 className={s.title}>Топ 100 книг </h1>
             <p className={s.sign}>По моей версии</p>
             </div>
             <div className={s.cont_best}>
-                <Card/>
-                <Card/>
-                <Card/>
-                <Card/>
-                <Card/>
-                <Card/>
-                <Card/>
-                <Card/>
+            {books.map((item,index)=>(<Card func={switcPopUp} onClick={()=>{alert()}} key={index} genre={item.genre}   id={item.id} title={item.title} autor={item.autor} description={item.description}/>))}
             </div>
+           
         </div>
     )
 }
