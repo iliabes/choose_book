@@ -12,14 +12,11 @@ import classNames from 'classnames'
 
 
 
-const Home = () => {
+const Home = (props:any) => {
     let step = useAppSelector(state => (state.bookSlice))
-   
- 
     let isBook = step.id[0]
-    console.log('step :', isBook);
     let animate = false
-    // isBook = 'step'
+
 
 
     
@@ -27,28 +24,42 @@ const Home = () => {
 
 
 
-    function changeSlide(num:number){
-        console.log(num);
-        
-        dispath(changeAnimate(true))
-        setTimeout(()=>{
-            dispath(changeAnimateBgImage(true))
-            dispath(changeId(num))
-        },2000)
-        setTimeout(()=>{
-            dispath(changeAnimateBgImage(false))
-            dispath(changeAnimate(false))
-        },3000)
+    // function changeSlide(num:any){
+    // console.log('isBook',num);
+    
+    // if(num[0] === 'step'){
+    //     dispath(changeAnimate(true))
+    //     setTimeout(()=>{
+    //         dispath(changeAnimateBgImage(true))
+    //         dispath(changeId(num))
+    //     },2000)
+    //     setTimeout(()=>{
+    //         dispath(changeAnimateBgImage(false))
+    //         dispath(changeAnimate(false))
+    //     },3000)
+    // }else{
+    //     props.func()
+    //     setTimeout(()=>{
+            
+    //         dispath(changeId(num))
+    //     },1000)
+
+    // }
+
+    // }
+
+    function changeSlide(num:any){
+        dispath(changeId(num))
     }
 
 
-    console.log(steps[step.id[1]]);
+
     
 
     if(isBook === 'step'){
         return(
             <div className={s.home}>
-                <ImageBlock idImage={step.id[1]}  />
+                <ImageBlock onClick={props.func} idImage={step.id[1]}  />
                 <Questions ansvers={steps[step.id[1]].ansvers} question={steps[step.id[1]].questions} funcDispatch={changeSlide} />
                 
             </div>
@@ -56,8 +67,8 @@ const Home = () => {
         }else if(isBook === 'book'){
             return(
                 <div className={s.home}>
-                <Book_block idBook={step.id[1]} autor={books[step.id[1]].autor}  title={books[step.id[1]].title}/>
-                <Description description={books[step.id[1]].description} simularbooks={books[step.id[1]].simularBooks}/>
+                <Book_block  idBook={step.id[1]} autor={books[step.id[1]].autor}  title={books[step.id[1]].title}/>
+                <Description link={books[step.id[1]].link} description={books[step.id[1]].description} simularbooks={books[step.id[1]].simularBooks}/>
                 <div className={ classNames(s.blue_circle,{[s.blue_circle_active]:animate})}></div>
                 </div>
             )

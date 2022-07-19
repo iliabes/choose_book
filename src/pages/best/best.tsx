@@ -23,7 +23,7 @@ const Best = () => {
             <p className={s.sign}>По моей версии</p>
             </div>
             <div className={s.cont_best}>
-            {books.map((item,index)=>(<Card func={switcPopUp} onClick={()=>{alert()}} key={index} genre={item.genre}   id={item.id} title={item.title} autor={item.autor} description={item.description}/>))}
+            {books.map((item,index)=>(<Card func={switcPopUp}  key={index} link={item.link} genre={item.genre}   id={item.id} title={item.title} autor={item.autor} description={item.description}/>))}
             </div>
         </div>
     )

@@ -1,7 +1,6 @@
 
 import s from './AnswerButton.module.sass'
-import { useAppDispatch } from "../../../../hooks/store";
-import { changeId } from "../../../../store/slices/slice";
+
 
 
  const AnswerButton  =  (func:any) => {
@@ -9,7 +8,7 @@ import { changeId } from "../../../../store/slices/slice";
 
 
 
-    return (<button onClick={()=>{func.func(func.quest.ansverID)}} className={s.answeButton} >{func.quest.ansver}</button>)
+    return (<a onClick={()=>{func.func(func.quest.ansverID)}} className={s.answeButton} >{func.quest.ansver}</a>)
 }
 
 export default AnswerButton
