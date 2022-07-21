@@ -56,18 +56,20 @@
         id:3,
         questions:'Что выбереш ?',
         ansvers:[
+
             {   
-                ansverID:['step', 0],
-                ansver:   'Можно и то и другое'                      
-            },
-            {   
-                ansverID:['step', 0],
+                ansverID:['step', 21],
                 ansver:   'Я читаю только книги с картинками'                      
             },
             {   
-                ansverID:['step', 0],
-                ansver:   'Мне не нравится высе вышеперечисленное'                      
-            }
+                ansverID:['step', 27],
+                ansver:   'Мне больше нравится юмор'                      
+            },
+            {   
+                ansverID:['step', 22],
+                ansver:   'Ни то не другое'                      
+            },
+
         ]
     },
     {
@@ -164,7 +166,7 @@
             },
             {   
                 ansverID:['book', 16],
-                ansver:   'Нет слишком пыльно  '                      
+                ansver:   'Нет слишком пыльно'                      
             },
  
         ]
@@ -205,7 +207,7 @@
 
     {
         id:12,
-        questions:'Что настеч альтернативной истории',
+        questions:'Что насчет альтернативной истории',
         ansvers:[
             {   
                 ansverID:['book', 13],
@@ -245,7 +247,7 @@
                 ansver:   'Да'                      
             },
             {   
-                ansverID:['book', 0],
+                ansverID:['step', 17],
                 ansver:   'Нет'                      
             },
             {   
@@ -256,18 +258,18 @@
     },
     {
         id:15,
-        questions:'Любитель космо войн ?',
+        questions:'Любитель войн ?',
         ansvers:[
             {   
                 ansverID:['step', 16],
                 ansver:   'Да'                      
             },
             {   
-                ansverID:['book', 0],
+                ansverID:['book', 32],
                 ansver:   'Нет'                      
             },
             {   
-                ansverID:['book', 0],
+                ansverID:['book', 33],
                 ansver:   'Возможно'                      
             },
         ]
@@ -292,6 +294,239 @@
                 ansverID:['book', 25],
                 ansver:   'Человек против человека'                      
             },
+        ]
+    },
+    {
+        id:17,
+        questions:'Под землей или на земле ?',
+        ansvers:[
+            {   
+                ansverID:['step', 18],
+                ansver:   'Под'                      
+            },
+            {   
+                ansverID:['book', 31],
+                ansver:   'Над'                      
+            },
+
+        ]
+    },
+    {
+        id:18,
+        questions:'Под землей или под водой?',
+        ansvers:[
+            {   
+                ansverID:['book', 26],
+                ansver:   'Землей'                      
+            },
+            {   
+                ansverID:['book', 27],
+                ansver:   'Водой'                      
+            },
+
+        ]
+    },
+    {
+        id:19,
+        questions:'Политика , религия или философия ?',
+        ansvers:[
+            {   
+                ansverID:['step', 20],
+                ansver:   'Политика'                      
+            },
+            {   
+                ansverID:['books', 30],
+                ansver:   'Религия'                      
+            },
+            {   
+                ansverID:['book', 29],
+                ansver:   'Философия'                      
+            },
+
+        ]
+    },
+    {
+        id:20,
+        questions:'Коммунизм или феменизм?',
+        ansvers:[
+            {   
+                ansverID:['book', 29],
+                ansver:   'Коммунизм'                      
+            },
+            {   
+                ansverID:['book', 28],
+                ansver:   'Феменизм'                      
+            },
+
+        ]
+    },
+    {
+        id:21,
+        questions:'?',
+        ansvers:[
+            {   
+                ansverID:['book', 34],
+                ansver:   'Heroes'                      
+            },
+            {   
+                ansverID:['book', 35],
+                ansver:   'Master of dream'                      
+            },
+            {   
+                ansverID:['book', 49],
+                ansver:   'Фашисты'                      
+            },
+
+        ]
+    },
+    {
+        id:22,
+        questions:'Что насчет хоррора ?',
+        ansvers:[
+            {   
+                ansverID:['step', 23],
+                ansver:   'Было бы неплохо'                      
+            },
+            {   
+                ansverID:['book', 48],
+                ansver:   'Незнаю'                      
+            },
+
+        ]
+    },
+    {
+        id:23,
+        questions:'Зомби и вампиры или что-то другое?',
+        ansvers:[
+            {   
+                ansverID:['book', 36],
+                ansver:   'Зомби '                      
+            },
+            {   
+                ansverID:['book', 37],
+                ansver:   'Вампиры'                      
+            },
+            {   
+                ansverID:['book', 38],
+                ansver:   'Другое'                      
+            },
+        ]
+    },
+    {
+        id:24,
+        questions:'Роботы или хронофантастика ?',
+        ansvers:[
+            {   
+                ansverID:['step', 25],
+                ansver:   'Роботы'                      
+            },
+            {   
+                ansverID:['step', 0],
+                ansver:   'Хронофантастика'                      
+            },
+
+        ]
+    },
+    {
+        id:25,
+        questions:'Какие роботы ?',
+        ansvers:[
+            {   
+                ansverID:['book', 29],
+                ansver:   'Роботы которые скрваются'                    
+            },
+            {   
+                ansverID:['book', 41],
+                ansver:   'Роботы убийцы'                      
+            },
+
+            {   
+                ansverID:['book', 39],
+                ansver:   'Роботы рабочий'                      
+            },
+            {   
+                ansverID:['book', 40],
+                ansver:   'Роботы как  боги'                      
+            },
+
+        ]
+    },
+
+    {
+        id:26,
+        questions:'Путешествия во времени для чего ',
+        ansvers:[
+            {   
+                ansverID:['book', 0],
+                ansver:   'Для исследований'                    
+            },
+            {   
+                ansverID:['book', 47],
+                ansver:   'Для торговли'                      
+            },
+
+            {   
+                ansverID:['book', 31],
+                ansver:   'Средство от депресии'                      
+            },
+
+
+        ]
+    },
+    {
+        id:27,
+        questions:'Какого вида юмор интересует ',
+        ansvers:[
+            {   
+                ansverID:['step', 28],
+                ansver:   'Черный '                    
+            },
+            {   
+                ansverID:['step', 29],
+                ansver:   'Фентези'                      
+            },
+
+            {   
+                ansverID:['book', 52],
+                ansver:   'Классика'                      
+            },
+
+
+        ]
+    },
+    {
+        id:28,
+        questions:'Что интереснее ? ',
+        ansvers:[
+            {   
+                ansverID:['book', 44],
+                ansver:   'Приключение хиккана '                    
+            },
+            {   
+                ansverID:['book', 51],
+                ansver:   'Паралельные миры и много пауков'                      
+            },
+        ]
+    },
+    {
+        id:29,
+        questions:'У отца было три сына?',
+        ansvers:[
+            {   
+                ansverID:['book', 43],
+                ansver:   'Первый умный был детина'                    
+            },
+            {   
+                ansverID:['book', 45],
+                ansver:   'Второй был и так и сяк'                      
+            },
+
+            {   
+                ansverID:['book', 50],
+                ansver:   'Третий вовсе был дурак'                      
+            },
+
+
         ]
     },
 ]

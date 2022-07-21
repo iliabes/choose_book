@@ -22,35 +22,35 @@ const Home = (props:any) => {
     
     const dispath = useAppDispatch()
 
-
-
-    // function changeSlide(num:any){
-    // console.log('isBook',num);
     
-    // if(num[0] === 'step'){
-    //     dispath(changeAnimate(true))
-    //     setTimeout(()=>{
-    //         dispath(changeAnimateBgImage(true))
-    //         dispath(changeId(num))
-    //     },2000)
-    //     setTimeout(()=>{
-    //         dispath(changeAnimateBgImage(false))
-    //         dispath(changeAnimate(false))
-    //     },3000)
-    // }else{
-    //     props.func()
-    //     setTimeout(()=>{
-            
-    //         dispath(changeId(num))
-    //     },1000)
 
-    // }
-
-    // }
+    
 
     function changeSlide(num:any){
-        dispath(changeId(num))
+    console.log('isBook',num);
+    
+    if(num[0] === 'step'){
+        dispath(changeAnimate(true))
+        setTimeout(()=>{
+            dispath(changeAnimateBgImage(true))
+            dispath(changeId(num))
+        },2000)
+        setTimeout(()=>{
+            dispath(changeAnimateBgImage(false))
+            dispath(changeAnimate(false))
+        },3000)
+    }else{
+        props.func()
+        setTimeout(()=>{
+            
+            dispath(changeId(num))
+        },1000)
+
     }
+
+    }
+
+
 
 
 
