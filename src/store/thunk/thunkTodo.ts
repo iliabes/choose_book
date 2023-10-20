@@ -1,8 +1,5 @@
-
-import { todoSlice } from '../slices/sliceTodo'
 import store from '../store'
 import  getTodo from '../../service/todo'
-import { AppDispatch } from '../store'
 import { loading, succes, fail } from '../slices/sliceTodo'
 
 
@@ -11,7 +8,7 @@ import { loading, succes, fail } from '../slices/sliceTodo'
 
 
 export default  function getTudu(){
-     return async (dispatch: AppDispatch) => {
+     return async () => {
           store.dispatch(loading())
           let response = await getTodo()
           try {

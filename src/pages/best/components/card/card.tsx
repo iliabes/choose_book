@@ -1,12 +1,13 @@
 import s from './card.module.sass'
 
+
 const Card = (props:any) => {
 
     return(
         <div onClick={()=>{props.func(props.id)}} className={s.card}>
             <div className={s.cord_cont}>
                 <div className={s.left_block}>
-                    <img className={s.bookImg}  src={require(`./../../../../assets/img/books/${props.id}.jpeg`)} alt=" book" />
+                    <img className={s.bookImg}  src={`./../../../../../public/books/${props.id}.jpeg`} alt=" book" />
                 </div>
                     <div className={s.right_block}>
                         <div className={s.cont_title}>

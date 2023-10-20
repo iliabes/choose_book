@@ -1,8 +1,7 @@
 import getWether from '../../service/wetaher'
 import { Loading,Succes ,Error} from '../slices/sliceWeather'
-import store from '../store'
 import { AppDispatch } from '../store'
-import  {sliceWeather} from '../slices/sliceWeather'
+
 
  
 

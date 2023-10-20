@@ -1,5 +1,4 @@
 import s from './Menu.module.sass'
-import GenerateSvg from '../../GenerateSvg/GenerateSvg'
 import classNames from 'classnames'
 import useTheme from '../../../hooks/themeHook'
 import { Theme } from '../../../context/themeContext'

@@ -1,11 +1,11 @@
 import { createSlice } from '@reduxjs/toolkit'
 import type { PayloadAction } from '@reduxjs/toolkit'
-import {IWether,IWeatherCurrent  } from '../../type/type'
 
 
 
 
-const initialState:IWether = { 
+
+const initialState = { 
     current:{
         feels_like:0,
         pressure:0,

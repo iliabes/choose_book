@@ -1,8 +1,6 @@
 
 import s from './random.module.sass'
-
 import books from "../../bd/books"
-
 import Book_block from "./components/Book_block/Book_block"
 import Description from "./components/Description/Description"
 import classNames from 'classnames'
@@ -22,11 +20,11 @@ const Random = () => {
     }
 
     
-      console.log();
-      
 
 
-    function changeSlide(num:number){
+
+
+    function changeSlide(){
         setAnimate(true)
         
         

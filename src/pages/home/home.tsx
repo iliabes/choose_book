@@ -4,57 +4,29 @@ import s from './home.module.sass'
 import { useAppSelector ,useAppDispatch} from "../../hooks/store"
 import steps from "../../bd/steps"
 import books from "../../bd/books"
-import { changeAnimate ,changeId,changeAnimateBgImage} from "../../store/slices/slice";
+import {changeId} from "../../store/slices/slice";
 import Book_block from "./components/Book_block/Book_block"
 import Description from "./components/Description/Description"
 import classNames from 'classnames'
 
 
+interface IHome {
+    message: string,
+    onClick: () => void,
+  }
 
-
-const Home = (props:any) => {
+const Home  = (props:any) => {
     let step = useAppSelector(state => (state.bookSlice))
     let isBook = step.id[0]
     let animate = false
-
-
-
-    
     const dispath = useAppDispatch()
 
-    
-
-    
 
     function changeSlide(num:any){
-    console.log('isBook',num);
-    
-    if(num[0] === 'step'){
-        dispath(changeAnimate(true))
-        setTimeout(()=>{
-            dispath(changeAnimateBgImage(true))
-            dispath(changeId(num))
-        },2000)
-        setTimeout(()=>{
-            dispath(changeAnimateBgImage(false))
-            dispath(changeAnimate(false))
-        },3000)
-    }else{
-        props.func()
-        setTimeout(()=>{
-            
-            dispath(changeId(num))
-        },1000)
-
+        console.log('any~!!!!!',num)
+        dispath(changeId(num))
     }
 
-    }
-
-
-
-
-
-    
 
     if(isBook === 'step'){
         return(

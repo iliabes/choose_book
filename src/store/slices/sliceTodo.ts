@@ -1,16 +1,11 @@
 import { createSlice } from '@reduxjs/toolkit'
 import type { PayloadAction } from '@reduxjs/toolkit'
-import { IResponse, ITodo } from '../../type/type'
 
 
-interface ITodos {
-    todos:ITodo[],
-    isLoading:boolean
-    response:IResponse
-}
 
 
-const initialState:ITodos = { 
+
+const initialState = { 
     todos:[
         {
             userId: 1,
