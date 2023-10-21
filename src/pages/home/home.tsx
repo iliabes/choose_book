@@ -10,10 +10,6 @@ import Description from "./components/Description/Description"
 import classNames from 'classnames'
 
 
-interface IHome {
-    message: string,
-    onClick: () => void,
-  }
 
 const Home  = (props:any) => {
     let step = useAppSelector(state => (state.bookSlice))
@@ -31,7 +27,7 @@ const Home  = (props:any) => {
     if(isBook === 'step'){
         return(
             <div className={s.home}>
-                <ImageBlock onClick={props.func} idImage={step.id[1]}  />
+                <ImageBlock onClick={props.func}  idImage={step.id[1]}  />
                 <Questions ansvers={steps[step.id[1]].ansvers} question={steps[step.id[1]].questions} funcDispatch={changeSlide} />
                 
             </div>

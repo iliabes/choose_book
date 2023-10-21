@@ -6,13 +6,13 @@ import classNames from 'classnames'
 import { useAppSelector } from "../../../../hooks/store"
 
 
-export const ImageBlock =  () => {
+export const ImageBlock =  (props:any) => {
     let step = useAppSelector(state => (state.bookSlice))    
 
     let animate = step.animate
     let animateBgImage = step.animateBgImage
     let bg = step.id[1]
-    console.log('bg',bg)
+    console.log('bg',props)
 
     return (
         <div className={s.image_block}>

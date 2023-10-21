@@ -1,3 +1,5 @@
+@import './../../../../style/mixins'
+    
 .popUp
     margin: 0
     padding: 0
@@ -47,14 +49,14 @@
     transform: translateX(0)
 
 
-@media screen and (min-width: 768px)
+@include mediaSmall
     .popUp
         margin-left: 5%
         margin-top: 5%
         width: 90%
         height: 90vh
 
-@media screen and (min-width: 1024px)
+@include mediaMiddle
     .popUp
         padding: 10px
         margin-left: 15%
@@ -69,7 +71,7 @@
         .title
             margin-top: 20px
 
-@media screen and (min-width: 1200px)
+@include mediaLarge
     .popUp
         padding: 10px
         margin-left: 75%
