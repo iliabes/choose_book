@@ -1,6 +1,8 @@
+import {ISteps} from  './../type/type'
 
 
-const steps:any = [
+
+const steps:ISteps[] = [
     {
         id:0,
         questions:'Фантастика или фентези ?',

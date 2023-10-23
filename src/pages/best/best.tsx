@@ -20,7 +20,7 @@ const Best = () => {
             <PopUp func={switcPopUp} id={idBook} anim={anim}/>
             <div className={s.top_block}>
                 <h1 className={s.title}>Топ 100 книг </h1>
-                <p className={s.sign}>По моей версии</p>
+                <p className={s.sign}>По версии чат GPT</p>
             </div>
             <div className={s.cont_best}>
             {books.map((item:any,index:any)=>( 

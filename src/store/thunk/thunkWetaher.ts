@@ -31,35 +31,5 @@ export default getWetaher
 
 
 
-// export default async function getTudu(){
-//    return async () => {
-//      let response = await getNet()
-//      console.log(response)
-//      try{
-//           if(1){
-//                console.log('ok')
-//           }else{
-//                console.log('no ok')
-//           }
-//      }catch(err){   
-//           console.log(err)
-//      }
-    
-//    }
-   
-// }
 
-
-// interface Ifetch{
-//      data:any,
-//      status:number
-// }
-
-// function getNet():any{
-//      axios.get('https://jsonplaceholder.typicode.com/users/1/todos')
-//           .then(function (response) {
-//                console.log(response)
-//                return response
-//           })
-// }
 

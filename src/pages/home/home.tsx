@@ -11,14 +11,15 @@ import classNames from 'classnames'
 
 
 
-const Home  = (props:any) => {
+const Home  = (props: { func: void }) => {
+    console.log('HOMEEEE!',props)
     let step = useAppSelector(state => (state.bookSlice))
     let isBook = step.id[0]
     let animate = false
     const dispath = useAppDispatch()
 
 
-    function changeSlide(num:any){
+    function changeSlide(num: number){
         console.log('any~!!!!!',num)
         dispath(changeId(num))
     }
@@ -29,7 +30,7 @@ const Home  = (props:any) => {
             <div className={s.home}>
                 <ImageBlock onClick={props.func}  idImage={step.id[1]}  />
                 <Questions ansvers={steps[step.id[1]].ansvers} question={steps[step.id[1]].questions} funcDispatch={changeSlide} />
-                
+                <div className={ classNames(s.blue_circle,{[s.blue_circle_active]:animate})}></div>
             </div>
         )
         }else if(isBook === 'book'){
