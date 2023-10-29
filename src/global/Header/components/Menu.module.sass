@@ -1,10 +1,13 @@
+@import '../../../style/mixins'
+    
 .menu
     background-color: var(--compponent-bg-default)
     bottom:  -95vh
     left: 0
     top: -30px
     width: 100vw
-    height: 105vh
+    height: 115vh
+    padding-bottom: 10vh    
     position: absolute
     z-index: 100
     transform: translateX(-110%)
@@ -43,7 +46,7 @@
     transform: translateX(0)
 
 
-@media screen and (min-width: 1200px)
+@include  mediaLarge
     .menu
         width: 15vw
         border-right: 4px solid #66FCF1

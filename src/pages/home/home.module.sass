@@ -1,14 +1,43 @@
 @import './../../style/mixins'
+@import './../../style/animation'
 
 .home
-    flex: 1 0 auto
-    display: flex
-    flex-direction: column
-    width: 100%
-    height: 100%
-    .btn
+        flex: 1 0 auto
+        display: flex
+        flex-direction: column
+        width: 100%
+        height: 100%
+.circle
+        width: 50px
+        height: 50px
+        background-color: #11879a
+        position: absolute
+        top: -50px
+        left: -50px
+        border-radius: 30px
         z-index: 999
-    .blue_circle
+.square
+        position: absolute
+        width: 120%
+        height: 120vh
+        background-color: black
+        position: absolute
+        top: 0
+        left: -120%
+        z-index: 990
+
+.circle_active
+        animation: circle_animate 2.4s forwards
+.square_active
+        animation: circle_squad 3.1s forwards
+        animation-delay: .3s
+.square_active_book
+        animation: circle_squad_book 3s forwards
+        animation-delay: 0s
+
+.btn
+        z-index: 999
+.blue_circle
         width: 30px
         height: 30px
         background-color: var(--compponent-btn-default)
@@ -18,20 +47,14 @@
         opacity: 0
         transition: 2s
 
-    .blue_circle_active
+.blue_circle_active
         opacity: 1
         transform: scale(100)
 
 @include  mediaTablet
-    .home
-        flex-direction: row
+        .home
+                flex-direction: row
 
 @include  mediaLarge
-    .home
-        flex-direction: row
-
-
-
-
-
-
+        .home
+                flex-direction: row

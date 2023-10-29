@@ -1,4 +1,5 @@
 @import '../../../../style/variable'
+@import '../../../../style/mixins'
     
 .description_cont
     box-sizing: border-box
@@ -39,30 +40,44 @@
         color: var(--compponent-text-default)
 
 
-@media screen and (min-width: 480px)
-    .description_cont
-        align-items: flex-end
-        align-items: center
-        .description
-            margin-top: 33px
-            font-size: 14px
-        .fant_title
-            font-size: 15px
-        .fant_btn
-            padding: 2px
 
-@media screen and (min-width: 768px)
+@include  mediaSmaller
     .description_cont
         align-items: flex-start
         .description
             margin-top: 33px
-            font-size: 22px
+            font-size: 14px
+        .fant_title
+            font-size: 16px
+        .fant_btn
+            padding: 4px
+
+
+@include  mediaSmall
+    .description_cont
+        align-items: flex-start
+        .description
+            margin-top: 33px
+            font-size: 10px
         .fant_title
             font-size: 24px
         .fant_btn
             padding: 4px
     
-@media screen and (min-width: 1200px)
+
+@include  mediaTablet
+    .description_cont
+        align-items: center
+        justify-content: center
+        .description
+            margin-top: 33px
+            font-size: 20px
+        .fant_title
+            font-size: 15px
+        .fant_btn
+            padding: 2px
+
+@include  mediaLarge
     .description_cont
         padding: 30px 10px
         width: 35vw
@@ -78,3 +93,5 @@
             margin-top: 10px
             color: var(--compponent-text-default)
             transition: 1s
+
+

@@ -3,9 +3,16 @@ import classNames from 'classnames'
 import books from '../../../../bd/books'
 
 
-const PopUp = (props:any) => {
+interface IpopUp{
+    anim:string,
+    id:number,
+    func:(num:number)=>void,
+
+}
+
+const PopUp = (props:IpopUp) => {
     let book = books[props.id]
-    console.log('book :', book);
+
 
     return(
         <div  className={classNames(s.popUp,{[s.popUp_active]:props.anim})}>

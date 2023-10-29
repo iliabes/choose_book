@@ -1,0 +1,65 @@
+@import '../../../../style/variable'
+@import '../../../../style/mixins'
+
+
+.image_block
+    width: 100%
+    height: 50vh
+    background-color: var(--compponent-bg-default)
+    filter: blur(7px)
+    .window
+        overflow: hidden
+        position: relative
+        .circle
+            width: 50px
+            height: 50px
+            background-color: #11879a
+            position: absolute
+            top: -50px
+            left: -50px
+            border-radius: 30px
+
+  
+        .square
+            width: 100%
+            height: 100vh
+            background-color: black
+            position: absolute
+            top: 0
+            left: -100%
+
+        .main_container
+            height: relative
+            display: flex
+            flex-direction: row
+            transition: 1s
+            height: 50vh
+            // transform: translateX(100%)
+            .bg_image
+                height: 100%
+                width: 100%
+        .main_container_inactive
+          transform: translateX(100%)
+        .main_container_active
+            transform: translateX(0)
+
+.ci
+  background-color: red
+
+
+
+@media screen and (min-width: 480px)
+    .image_block
+      height: 100%
+      .window .main_container
+        height: 100vh
+
+
+
+@media screen and (min-width: 1200px)
+    .image_block
+        height: 100%
+        .window .main_container
+          height: 100vh
+
+

@@ -1,4 +1,5 @@
 @import '../../../../style/variable'
+@import '../../../../style/mixins'
     
 .description_cont
     box-sizing: border-box
@@ -27,9 +28,11 @@
     .again
         background-color: var(--compponent-btn-default)
         border-radius: 5px
-        padding: 2px
+        padding: 4px  
         border-color: #35a16f
         color: var(--compponent-text-default)
+        font-size: 15px
+        border-radius: 3px
     .description_link
         margin-top: 5px
         padding: 5px
@@ -39,9 +42,9 @@
         border-radius: 5px
 
 
-@media screen and (min-width: 480px)
+@include  mediaTablet
     .description_cont
-        align-items: flex-end
+        
         align-items: center
         .description
             margin-top: 33px
@@ -51,7 +54,7 @@
         .fant_btn
             padding: 2px
 
-@media screen and (min-width: 768px)
+@include   mediaSmall
     .description_cont
         align-items: flex-start
         .description
@@ -62,7 +65,7 @@
         .fant_btn
             padding: 4px
     
-@media screen and (min-width: 1200px)
+@include mediaLarge
     .description_cont
         padding: 30px 10px
         width: 35vw

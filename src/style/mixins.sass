@@ -24,10 +24,10 @@
 
 //$tablet: 481px
 @mixin  mediaTablet
-    @media screen and (max-width: $tablet)
+    @media screen and (min-width: $tablet)
         @content
 
 //$smaller: 300px
 @mixin  mediaSmaller
-    @media screen and (max-width: $tablet)
+    @media screen and (min-width: $smaller)
         @content

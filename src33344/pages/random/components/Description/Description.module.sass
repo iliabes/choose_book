@@ -1,0 +1,81 @@
+@import '../../../../style/variable'
+@import '../../../../style/mixins'
+    
+.description_cont
+    box-sizing: border-box
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    padding: 10px
+    background-color: var(--compponent-bg-default)
+    transition: 1s
+    min-height: 50vh
+    .description
+        color: var(--compponent-text-default)
+        padding-left: 3px
+        border-left: 2px solid var(--compponent-title-default)
+        font-size: 19px
+    .fant_title
+        margin-top: 20px
+        color: var(--compponent-title-default)
+    .fant_btn
+        background-color: var(--compponent-btn-default)
+        border: none
+        padding: 5px
+        border-radius: 5px
+        margin-top: 10px
+        color: var(--compponent-text-default)
+        transition: 1s
+    .again
+        background-color: var(--compponent-btn-default)
+        border-radius: 5px
+        padding: 2px
+        border-color: #35a16f
+    .random_link
+        margin-top: 5px
+        padding: 3px
+        background-color: var(--compponent-btn-default)
+        box-sizing: border-box
+        border-radius: 5px
+        color: var(--compponent-text-default)
+
+
+@media screen and (min-width: 480px)
+    .description_cont
+        align-items: flex-end
+        align-items: center
+        .description
+            margin-top: 33px
+            font-size: 14px
+        .fant_title
+            font-size: 15px
+        .fant_btn
+            padding: 2px
+
+@media screen and (min-width: 768px)
+    .description_cont
+        align-items: flex-start
+        .description
+            margin-top: 33px
+            font-size: 22px
+        .fant_title
+            font-size: 24px
+        .fant_btn
+            padding: 4px
+    
+@media screen and (min-width: 1200px)
+    .description_cont
+        padding: 30px 10px
+        width: 35vw
+        height: 100vh
+        border-left: 2px solid var(--compponent-title-default)
+        .description
+            border: none
+        .fant_btn
+            background-color: var(--compponent-btn-default)
+            border: none
+            padding: 16px
+            border-radius: 5px
+            margin-top: 10px
+            color: var(--compponent-text-default)
+            transition: 1s

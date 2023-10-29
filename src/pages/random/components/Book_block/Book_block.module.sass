@@ -1,5 +1,5 @@
-
-
+@import '../../../../style/animation'
+@import '../../../../style/mixins'
 
 .image_block
     width: 100%
@@ -45,26 +45,19 @@
 .ci
   background-color: red
 
-@keyframes circle_animate 
-  from
-    left: 0
-    top: 0
-    transform: scale(2)
-  to
-    top: 50px
-    left: 50px
-    transform: scale(52)
 
 
-@keyframes circle_squad
-  50%
-    left: -100%
-  100%
-    left: 0
 
-@media screen and (min-width: 480px)
+
+
+
+@include  mediaSmaller
   .image_block
-      
+      height: 55vh
+      margin-top: 20px
+
+@include  mediaTablet
+  .image_block
       height: 100%
       .window 
         .book_block
@@ -74,10 +67,8 @@
               height:  450px
               margin-top: 33px
 
-@media screen and (min-width: 1200px)
+@include  mediaLarge
     .image_block
         height: 100%
         .window .book_block
           height: 100vh
-
-

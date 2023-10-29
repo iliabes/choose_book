@@ -1,5 +1,5 @@
 @import '../../../../style/variable'
-
+@import '../../../../style/mixins'
 
 
 .image_block
@@ -42,32 +42,23 @@
           transform: translateX(100%)
         .main_container_active
             transform: translateX(0)
-        .circle_active
-            animation: circle_animate 2s  forwards 
-        .square_active
-            animation: circle_squad 3s  forwards
+
 .ci
   background-color: red
 
-@keyframes circle_animate  
-    50%
-        left: 0
-        top: 0
-        transform: scale(2)
-    100% 
-        top: 50px
-        left: 50px
-        transform: scale(102)
+// @include  mediaSmaller
+//     .image_block
+//       margin-top: 10px
+//       height: 55vh
 
 
-@keyframes circle_squad
-    50%
-      left: -100%
-    100% 
-        left: 0
+@include  mediaLarge
+    .image_block
+        height: 100%
+        .window .main_container
+          height: 100vh
 
-
-@media screen and (min-width: 480px)
+@include  mediaTablet
     .image_block
       height: 100%
       .window .main_container
@@ -75,10 +66,8 @@
 
 
 
-@media screen and (min-width: 1200px)
-    .image_block
-        height: 100%
-        .window .main_container
-          height: 100vh
+
+
+
 
 
