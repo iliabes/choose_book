@@ -36,7 +36,7 @@ const Home  = () => {
                 
                 <ImageBlock/>
                 <Questions animateSlide={animateSlide} funcDispatch={changeSlide}  ansvers={steps[step.id[1]].ansvers} question={steps[step.id[1]].questions} />
-                {/*<div className={ classNames(s.blue_circle,{[s.blue_circle_active]:animate})}></div> */}
+                {/* <div className={ classNames(s.blue_circle,{[s.blue_circle_active]:animate})}></div>  */}
                 <div  className={classNames(s.circle,{[s.circle_active]:animate})}></div>
                 <div className={classNames(s.square,{[s.square_active]:animate})}></div>
                 
