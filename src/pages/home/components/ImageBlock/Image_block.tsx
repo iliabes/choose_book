@@ -19,7 +19,6 @@ export const ImageBlock =  () => {
                     <div  className={classNames(s.main_container,{[s.main_container_inactive]:animateBgImage,}) }>
                         <img className={s.bg_image} src={`./../../../../public/bg/${bg}.jpg`} alt="bookShalter" />
                     </div>
-                    <button onClick={()=>{}}></button>
             </div>
         </div>
     )

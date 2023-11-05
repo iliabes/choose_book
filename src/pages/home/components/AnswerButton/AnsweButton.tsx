@@ -10,8 +10,7 @@ interface IAnsweButton{
 }
 
 const AnswerButton  =  (props:IAnsweButton) => {
-    console.log('ansverbtn',props)
-    return (<a onClick={()=>{setTimeout(()=>{props.funcDispatch(props.ansverID.ansverID)},2000);props.animateSlide()}} className={s.answerButton} >{props.ansverID.ansver}</a>)
+    return (<a onClick={()=>{setTimeout(()=>{props.funcDispatch(props.ansverID.ansverID)},2000);props.animateSlide()}} className={s.answeButton} >{props.ansverID.ansver}</a>)
 }
 
 export default AnswerButton

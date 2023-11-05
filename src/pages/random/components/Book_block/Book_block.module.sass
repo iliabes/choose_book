@@ -3,7 +3,6 @@
 
 .image_block
     width: 100%
-    height: 45vh
     background-color: var(--compponent-bg-default)
     box-sizing: border-box
     .window
@@ -19,11 +18,8 @@
             justify-content: center 
             align-items: center
             transition: 1s
-            height: 50vh
             margin-bottom: 5px
-            // transform: translateX(100%)
             .bg_image
-
                 width: 200px
                 height: 250px
                 border: 2px solid #2ab5a0
@@ -47,28 +43,29 @@
 
 
 
-
-
-
-
-@include  mediaSmaller
-  .image_block
-      height: 55vh
-      margin-top: 20px
-
 @include  mediaTablet
   .image_block
+      
       height: 100%
       .window 
         .book_block
+          align-items: flex-start
           height: 100vh
           .bg_image
               width: 300px
               height:  450px
               margin-top: 33px
 
+@include mediaSmall
+    .image_block
+      .window 
+        .book_block
+          align-items: center
+
 @include  mediaLarge
     .image_block
         height: 100%
         .window .book_block
           height: 100vh
+
+

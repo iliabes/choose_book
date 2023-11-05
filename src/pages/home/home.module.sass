@@ -23,7 +23,7 @@
         background-color: black
         position: absolute
         top: 0
-        left: -160%
+        left: -120%
         z-index: 990
 
 .circle_active
@@ -51,10 +51,10 @@
         opacity: 1
         transform: scale(100)
 
-@include  mediaSmaller
-        .home
-                flex-direction: column
-
 @include  mediaTablet
+        .home
+                flex-direction: row
+
+@include  mediaLarge
         .home
                 flex-direction: row

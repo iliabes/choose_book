@@ -31,6 +31,11 @@
         border-radius: 5px
         padding: 2px
         border-color: #35a16f
+        border: 1px solid #000
+        color: var(--compponent-text-default)
+        padding: 8px  5px
+        border-bottom: 3px solid var(--compponent-text-default)
+        margin-bottom: 5px
     .random_link
         margin-top: 5px
         padding: 3px
@@ -40,43 +45,31 @@
         color: var(--compponent-text-default)
 
 
-
-@include  mediaSmaller
+@include  mediaTablet
     .description_cont
+        border-left: 3px solid  var(--compponent-btn-default)
         align-items: flex-start
+        justify-content: center
         .description
+            border: none
             margin-top: 33px
             font-size: 14px
         .fant_title
-            font-size: 16px
+            font-size: 15px
         .fant_btn
-            padding: 4px
-
+            padding: 2px
 
 @include  mediaSmall
     .description_cont
         align-items: flex-start
         .description
             margin-top: 33px
-            font-size: 10px
+            font-size: 22px
         .fant_title
             font-size: 24px
         .fant_btn
             padding: 4px
     
-
-@include  mediaTablet
-    .description_cont
-        align-items: center
-        justify-content: center
-        .description
-            margin-top: 33px
-            font-size: 20px
-        .fant_title
-            font-size: 15px
-        .fant_btn
-            padding: 2px
-
 @include  mediaLarge
     .description_cont
         padding: 30px 10px
@@ -93,5 +86,3 @@
             margin-top: 10px
             color: var(--compponent-text-default)
             transition: 1s
-
-

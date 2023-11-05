@@ -8,8 +8,8 @@ const steps:ISteps[] = [
         questions:'Фантастика или фентези ?',
         ansvers:[
             {   
-                ansverID:['step', 1],
-                // ansverID:['book', 0],
+                // ansverID:['step', 1],
+                ansverID:['book', 1],
                 ansver:   'Фентези'                      
             },
             {   
@@ -24,7 +24,7 @@ const steps:ISteps[] = [
     },
     {
         id:1,
-        questions:'Ты расттроешся если не найдеш Гарри Потера ?',
+        questions:'Ты расcтроешся если не найдеш Гарри Потера ?',
         ansvers:[
             {   
                 ansverID:['book', 0],
@@ -60,16 +60,16 @@ const steps:ISteps[] = [
         questions:'Что выбереш ?',
         ansvers:[
             {   
-                ansverID:['step', 0],
-                ansver:   'Можно и то и другое'                      
+                ansverID:['step', 18],
+                ansver:   'Как насчет ужасов?'                      
             },
             {   
-                ansverID:['step', 0],
-                ansver:   'Я читаю только книги с картинками'                      
+                ansverID:['step', 17],
+                ansver:   'Может быть нехудожественная литература?'                      
             },
             {   
-                ansverID:['step', 0],
-                ansver:   'Мне не нравится высе вышеперечисленное'                      
+                ansverID:['book', 26],
+                ansver:   'Мне не нравится все вышеперечисленное'                      
             }
         ]
     },
@@ -108,7 +108,7 @@ const steps:ISteps[] = [
     },
     {
         id:6,
-        questions:'Какой итебе больше персонажей Легенд Артура тебе больше нравится ?',
+        questions:'Какой из персонажей Легенд Артура тебе больше нравится ?',
         ansvers:[
             {   
                 ansverID:['book', 2],
@@ -189,7 +189,7 @@ const steps:ISteps[] = [
     },
     {
         id:11,
-        questions:'Какое животные нравится больше?',
+        questions:'Какое животное нравится больше?',
         ansvers:[
             {   
                 ansverID:['book', 10],
@@ -208,7 +208,7 @@ const steps:ISteps[] = [
 
     {
         id:12,
-        questions:'Что настеч альтернативной истории',
+        questions:'Что насчет альтернативной истории',
         ansvers:[
             {   
                 ansverID:['book', 13],
@@ -259,7 +259,7 @@ const steps:ISteps[] = [
     },
     {
         id:15,
-        questions:'Любитель космо войн ?',
+        questions:'Любитель космических войн ?',
         ansvers:[
             {   
                 ansverID:['step', 16],
@@ -294,6 +294,70 @@ const steps:ISteps[] = [
             {   
                 ansverID:['book', 25],
                 ansver:   'Человек против человека'                      
+            },
+        ]
+    },
+    {
+        id:17,
+        questions:'Что интереснее развитие общества, технологии или музыки ?',
+        ansvers:[
+            {   
+                ansverID:['book', 27],
+                ansver:   'Общество'                      
+            },
+            {   
+                ansverID:['book', 29],
+                ansver:   'Технология'                      
+            },
+            {   
+                ansverID:['book', 28],
+                ansver:   'Музыка'                      
+            },
+        ]
+    },
+    {
+        id:18,
+        questions:'Какие ужасы вам боольше нравятся?',
+        ansvers:[
+            {   
+                ansverID:['step', 19],
+                ansver:   'Новые'                      
+            },
+            {   
+                ansverID:['step', 20],
+                ansver:   'Старые'                      
+            },
+        ]
+    },
+    {
+        id:19,
+        questions:'Что больше пугает',
+        ansvers:[
+            {   
+                ansverID:['book', 34],
+                ansver:   'Сумашедший химик-цветовод'                      
+            },
+            {   
+                ansverID:['book', 32],
+                ansver:   'Замкнутое пространство'                      
+            },
+            {   
+                ansverID:['book', 30],
+                ansver:   'Големы из людей'                      
+            },
+        ]
+    },
+    {
+        id:20,
+        questions:'Что интереснее?',
+        ansvers:[
+            {   
+                ansverID:['book', 33],
+                ansver:   'Погоня в опустевшем городе'                      
+            },
+            {   
+                ansverID:['book', 31],
+                ansver:   'Пытки заключенного перед казнью'                      
             },
         ]
     },

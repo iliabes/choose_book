@@ -1,7 +1,7 @@
 @import '../../../../style/variable.sass'
 @import '../../../../style/mixins'
     
-.answerButton
+.answeButton
     background-color: var(--compponent-btn-default)
     border: none
     padding: 16px
@@ -10,28 +10,16 @@
     color: var(--compponent-text-default)
     transition: 1s
 
-.answerButton:hover
+.answeButton:hover
         border: 1px solid gold
         transform: scale(1.1)
         box-shadow: 10px -5px teal
 
-// @media screen and (min-width: 480px)
-//     .answeButton
-//         padding: 10px
-
-
-
-
-@include mediaSmaller
-    .answerButton
-        padding: 8px
-    
-
-@include mediaTablet
-    .answerButton
+@media screen and (min-width: 480px)
+    .answeButton
         padding: 10px
 
+@media screen and (min-width: 768px)
+    .answeButton
+        padding: 12px
 
-@include mediaMedium
-    .answerButton
-        padding: 14px

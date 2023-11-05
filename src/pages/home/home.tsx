@@ -15,6 +15,7 @@ import { useState } from "react"
 const Home  = () => {
     let [animate,setAnimate] = useState(false)
     let step = useAppSelector(state => (state.bookSlice))
+    console.log('HOMEEEE!',step)
     let isBook = step.id[0]
     const dispath = useAppDispatch()
 
@@ -22,7 +23,7 @@ const Home  = () => {
         setAnimate(true)
         setTimeout(()=>{
             setAnimate(false)
-        },5000)
+        },3500)
     }
 
     function changeSlide(num:[string ,number]):void{
@@ -36,7 +37,7 @@ const Home  = () => {
                 
                 <ImageBlock/>
                 <Questions animateSlide={animateSlide} funcDispatch={changeSlide}  ansvers={steps[step.id[1]].ansvers} question={steps[step.id[1]].questions} />
-                {/* <div className={ classNames(s.blue_circle,{[s.blue_circle_active]:animate})}></div>  */}
+                {/*<div className={ classNames(s.blue_circle,{[s.blue_circle_active]:animate})}></div> */}
                 <div  className={classNames(s.circle,{[s.circle_active]:animate})}></div>
                 <div className={classNames(s.square,{[s.square_active]:animate})}></div>
                 

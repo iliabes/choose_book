@@ -4,7 +4,7 @@
 
 .image_block
     width: 100%
-    height: 50vh
+    // height: 50vh
     background-color: var(--compponent-bg-default)
     filter: blur(7px)
     .window
@@ -46,17 +46,7 @@
 .ci
   background-color: red
 
-// @include  mediaSmaller
-//     .image_block
-//       margin-top: 10px
-//       height: 55vh
 
-
-@include  mediaLarge
-    .image_block
-        height: 100%
-        .window .main_container
-          height: 100vh
 
 @include  mediaTablet
     .image_block
@@ -66,8 +56,10 @@
 
 
 
-
-
-
+@include  mediaLarge
+    .image_block
+        height: 100%
+        .window .main_container
+          height: 100vh
 
 

@@ -9,12 +9,12 @@ import { IBooks, } from '../../../../type/type';
 
     function cnahgeId(){
         dispath(changeId(['step',0]))
-        
+   
     }
 
+    
         return (
             <div className={s.description_cont}>
-                
                 <p className={s.description}>{props.description}</p>
                 <button className={s.again} onClick={cnahgeId}>Поробовать снова</button>
                 <a className={s.description_link} href={props.link}>Посмотреть эту книгу на Fantlab.ru</a>
