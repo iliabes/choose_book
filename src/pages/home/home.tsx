@@ -15,7 +15,6 @@ import { useState } from "react"
 const Home  = () => {
     let [animate,setAnimate] = useState(false)
     let step = useAppSelector(state => (state.bookSlice))
-    console.log('HOMEEEE!',step)
     let isBook = step.id[0]
     const dispath = useAppDispatch()
 
@@ -29,7 +28,7 @@ const Home  = () => {
     function changeSlide(num:[string ,number]):void{
         dispath(changeId(num))
     }
-
+    console.log('step',steps[step.id[1]].ansvers)
 
     if(isBook === 'step'){
         return(

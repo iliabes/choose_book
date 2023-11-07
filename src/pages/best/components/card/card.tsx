@@ -1,11 +1,12 @@
 import s from './card.module.sass'
 
 interface IItem {
-    genre:string,
-    id:number,
-    title:string,
-    autor:string,
-    description:string,
+    genre:string | undefined,
+    id:any,
+    title:string | undefined,
+    autor:string | undefined,
+    description:string | undefined,
+    link: string |  undefined
     func:(id:number)=>void
 }
 

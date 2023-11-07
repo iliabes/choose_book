@@ -3,7 +3,7 @@ import classNames from 'classnames'
 import useTheme from '../../../hooks/themeHook'
 import { Theme } from '../../../context/themeContext'
 
-function Menu (props:{show:()=>void,switchMenu:()=>void}) {
+function Menu (props:{show:boolean,switchMenu:()=>void}) {
     let showMenu = props.show
     const theme = useTheme()
 

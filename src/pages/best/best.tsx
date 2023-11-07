@@ -34,7 +34,7 @@ const Best = () => {
                 <p className={s.sign}>По версии чат GPT</p>
             </div>
             <div className={s.cont_best}>
-            {books.map((item:IItem,index:number)=>( 
+            {books.map((item,index)=>( 
                 <Card func={switcPopUp}  
                 key={index} 
                 link={item.link} 

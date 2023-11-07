@@ -28,7 +28,7 @@ export interface IBooks  {
     year?: string,
     link?: string,
     description?: string,
-    simularBooks?: ISimularBooks[]
+    simularBooks?: any
     func?:()=>void
 }
 

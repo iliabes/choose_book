@@ -11,7 +11,7 @@ import { IBooks } from '../../../../type/type';
                 <button className={s.again} onClick={props.func}>Поробовать снова</button>
                 <a className={s.random_link} href={props.link}>Посмотреть на фантлаб</a>
                 <h3 className={s.fant_title}>Посмотреть похожие на фатлаб</h3>
-                {props.simularbooks.map((item:{autor:string,title:string},index:number)=>(<button key={index} className={s.fant_btn}>{item.autor}{item.title}</button>))}
+                {props.simularBooks.map((item:{autor:string,title:string},index:number)=>(<button key={index} className={s.fant_btn}>{item.autor}{item.title}</button>))}
             </div>
         )
     }
@@ -19,4 +19,3 @@ import { IBooks } from '../../../../type/type';
 export default Description
 
 
-// {props.simularBooks.map((item,key) => (<button>{item.autor}{item.title}</button>))} 

@@ -3,8 +3,9 @@ import s from './Book_block.module.sass'
 
 
 
- const Book_block =  (props:{title:string,autor:string}) => {
-   
+ const Book_block =  (props:{title:string | undefined,autor:string | undefined,idBook:number}) => {
+
+console.log('book_block', props)
     
 
 
@@ -21,6 +22,6 @@ import s from './Book_block.module.sass'
     )
 }
 
-// src={require(`./../../../../assets/img/books/${props.idBook}.jpeg`)}
+
 
 export default Book_block

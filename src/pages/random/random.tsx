@@ -45,7 +45,7 @@ const Random = () => {
         return(
             <div className={s.home}>
             <Book_block idBook={id} autor={books[id].autor}  title={books[id].title}/>
-            <Description func={changeSlide} link={books[id].link} description={books[id].description} simularbooks={books[id].simularBooks}/>
+            <Description func={changeSlide} link={books[id].link} description={books[id].description} simularBooks={books[id].simularBooks}/>
             <div className={ classNames(s.blue_circle,{[s.blue_circle_active]:animate})}></div>
             </div>
         )

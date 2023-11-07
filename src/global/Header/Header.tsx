@@ -15,7 +15,6 @@ function switchMenu(){
     return (
         <div className={s.header}>
                 <a className={s.cont_icon} href='/'>
-                {/* < GenerateSvg   id={'logo2'}/> */}
                 <img src={logo} alt="" />
                 </a>
 

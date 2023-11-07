@@ -4,7 +4,7 @@ import books from '../../../../bd/books'
 
 
 interface IpopUp{
-    anim:string,
+    anim:boolean,
     id:number,
     func:(num:number)=>void,
 
@@ -20,7 +20,6 @@ const PopUp = (props:IpopUp) => {
                     <img className={s.book_img} src={`./../../../../../public/books/${props.id}.jpeg`} alt="" />
                     <p className={s.title}>{books[props.id].title}</p>
                     <p className={s.description}>{books[props.id].description}</p>
-                    {/* <p className={s.genre}>{books[props.id].genre}</p> */}
                     <a href={book.link} className={s.link} onClick={()=>{props.func(props.id)}}>Посмотреть на fantlab.ru</a>
                     <button className={s.cancel} onClick={()=>{props.func(props.id)}}>x</button>
         </div>
