@@ -13,6 +13,7 @@ import { useState } from "react"
 
 
 const Home  = () => {
+
     let [animate,setAnimate] = useState(false)
     let step = useAppSelector(state => (state.bookSlice))
     let isBook = step.id[0]
@@ -28,7 +29,7 @@ const Home  = () => {
     function changeSlide(num:[string ,number]):void{
         dispath(changeId(num))
     }
-    console.log('step',steps[step.id[1]].ansvers)
+    // console.log('step',steps[step.id[1]].ansvers)
 
     if(isBook === 'step'){
         return(
@@ -39,7 +40,6 @@ const Home  = () => {
                 {/*<div className={ classNames(s.blue_circle,{[s.blue_circle_active]:animate})}></div> */}
                 <div  className={classNames(s.circle,{[s.circle_active]:animate})}></div>
                 <div className={classNames(s.square,{[s.square_active]:animate})}></div>
-                
             </div>
         )
         }else if(isBook === 'book'){

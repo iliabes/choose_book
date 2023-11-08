@@ -12,7 +12,7 @@ interface IpopUp{
 
 const PopUp = (props:IpopUp) => {
     let book = books[props.id]
-    console.log('book :', book);
+
 
     return(
         <div  className={classNames(s.popUp,{[s.popUp_active]:props.anim})}>

@@ -577,7 +577,7 @@ import {IBooks} from  './../type/type'
                 link:'https://fantlab.ru/work81030',
                 year:'1996'               
             },
-            {   
+            { 
                 autor:'Илья Масодов',
                 title:'Черти',
                 link:'https://fantlab.ru/work90464',

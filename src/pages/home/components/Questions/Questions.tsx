@@ -18,7 +18,6 @@ interface IQuestions{
 
 
 export const Questions =  (props:IQuestions) => {
-    console.log('question',props)
     function getKey(min:number,max:number):number{
    let rand = min + Math.random() * (max - min);
    let res = Date.now() * Math.round(rand);
@@ -29,9 +28,7 @@ return res
         <div className={s.questions}>
             <h1 className={s.title}>{props.question}</h1>
             {props.ansvers.map((ansvID:{ansverID:[string,number,]},ansv:number) => 
-           
             {
-            
             return <AnswerButton key={getKey(1,100)} animateSlide={props.animateSlide}  funcDispatch ={props.funcDispatch} ansver={ansv} ansID={ansvID} ></AnswerButton>}
             )}
         </div>

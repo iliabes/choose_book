@@ -9,7 +9,7 @@ const steps:ISteps[] = [
         ansvers:[
             {   
                 // ansverID:['step', 1],
-                ansverID:['book', 1],
+                ansverID:['step', 1],
                 ansver:   'Фентези'                      
             },
             {   
