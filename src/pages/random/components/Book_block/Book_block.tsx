@@ -5,7 +5,7 @@ import s from './Book_block.module.sass'
 
  const Book_block =  (props:{title:string | undefined,autor:string | undefined,idBook:number}) => {
 
-console.log('book_block', props)
+
     
 
 

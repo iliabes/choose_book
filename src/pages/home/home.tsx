@@ -29,7 +29,7 @@ const Home  = () => {
     function changeSlide(num:[string ,number]):void{
         dispath(changeId(num))
     }
-    // console.log('step',steps[step.id[1]].ansvers)
+
 
     if(isBook === 'step'){
         return(

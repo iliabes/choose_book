@@ -2,6 +2,7 @@ import s from './Menu.module.sass'
 import classNames from 'classnames'
 import useTheme from '../../../hooks/themeHook'
 import { Theme } from '../../../context/themeContext'
+import { Link } from 'react-router-dom'
 
 function Menu (props:{show:boolean,switchMenu:()=>void}) {
     let showMenu = props.show
@@ -17,9 +18,9 @@ function Menu (props:{show:boolean,switchMenu:()=>void}) {
         <div className={classNames(s.menu,{[s.menu_inactive]:!showMenu})}>
             <ul className={s.menu_cont}>
                 <a onClick={()=>{switchMode()}} className={s.menu_item}>Сменить тему</a>
-                <a href='/best' className={s.menu_item}>Топ книг</a>
-                <a href='/random' className={s.menu_item}>Случайная книга</a>
-                <a href='/home' className={s.menu_item} >Выбрать книгу</a>
+                <Link to='/best' className={s.menu_item}>Топ книг</Link>
+                <Link to='/random' className={s.menu_item}>Случайная книга</Link>
+                <Link to='/home' className={s.menu_item} >Выбрать книгу</Link>
                 <a onClick={()=>{props.switchMenu()}} className={s.item_cancel} >x</a>
             </ul>
         </div>

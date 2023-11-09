@@ -1,6 +1,7 @@
 import s from './MainMenu.module.sass'
 import useTheme from '../../hooks/themeHook'
 import { Theme } from '../../context/themeContext'
+import { Link } from 'react-router-dom'
 
 const MainMenu = () => {
     const theme = useTheme()
@@ -15,9 +16,9 @@ const MainMenu = () => {
     return(
     <div className={s.main_menu}>
         <ul className={s.menu}>
-        <a className={s.menu_item} href='/best'>Топ книг</a>
-        <a className={s.menu_item} href='/random'>Случайная книга</a>
-        <a className={s.menu_item} href='/home'>Выбрать книгу</a>
+        <Link className={s.menu_item} to='/best'>Топ книг</Link>
+        <Link className={s.menu_item} to='/random'>Случайная книга</Link>
+        <Link className={s.menu_item} to='/home'>Выбрать книгу</Link>
         <a className={s.menu_item} onClick={switchMode} >Сменить тему</a>
         </ul>
     </div> 

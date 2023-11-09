@@ -15,7 +15,7 @@ interface Iprovider{
 
 const ThemeProvider = ({children, ...props}:Iprovider) => {
     
-    let [theme,setTheme] = useState<Theme>(storage.getItem('theme') || Theme.LIGHT)
+    let [theme,setTheme] = useState<Theme>(storage.getItem('theme') || Theme.DARK)
     darkMode(theme)
     function switchTheme(theme:Theme){
         storage.setItem('theme',theme)
