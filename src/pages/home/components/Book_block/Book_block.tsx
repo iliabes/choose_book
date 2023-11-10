@@ -1,7 +1,7 @@
 import s from './Book_block.module.sass'
+import imgBook from '../../../../bd/imgBooks'
 
-
-const Book_block = (props: { idBook: number | undefined, title: string | undefined, autor: string | undefined }) => {
+const Book_block = (props: { idBook: number , title: string | undefined, autor: string | undefined }) => {
 
 
 
@@ -10,7 +10,7 @@ const Book_block = (props: { idBook: number | undefined, title: string | undefin
         <div className={s.image_block}>
             <div className={s.window}>
                 <div className={s.book_block}>
-                    <img className={s.bg_image} src={`./../../../../public/books/${props.idBook}.jpeg`} alt="bookShalter" />
+                    <img className={s.bg_image} src={imgBook[props.idBook]} alt="bookShalter" />
                     <h2 className={s.title}>{props.title}</h2>
                     <h3 className={s.autor}>{props.autor}</h3>
                 </div>

@@ -1,8 +1,9 @@
 
 import s from './Description.module.sass'
 import { IBooks } from '../../../../type/type';
+import { Link } from 'react-router-dom';
 
- const Description =  (props:IBooks) => {
+const Description =  (props:IBooks) => {
 
         return (
             <div className={s.description_cont}>

@@ -45,12 +45,11 @@
 
 @include  mediaTablet
   .image_block
-      
       height: 100%
       .window 
         .book_block
-          align-items: flex-start
           height: 100vh
+          align-items: center
           .bg_image
               width: 300px
               height:  450px
@@ -60,12 +59,19 @@
     .image_block
       .window 
         .book_block
+
           align-items: center
+          justify-content: center
 
 @include  mediaLarge
     .image_block
         height: 100%
         .window .book_block
           height: 100vh
+          box-sizing: border-box
+          margin: 0
+          display: flex
+          justify-content: center
+
 
 

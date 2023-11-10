@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom';
 
 function Header () {
 let [show,setShow] = useState(true)
+
 function switchMenu(){    
     setShow(!show)
 }
@@ -21,7 +22,7 @@ function switchMenu(){
             <div  onClick={()=>{switchMenu()}} className={s.cont_icon}>
                 <GenerateSvg    id={'settings'}/>
             </div>
-            
+
             <Menu switchMenu={switchMenu} show={show}/>
         </div>
     )

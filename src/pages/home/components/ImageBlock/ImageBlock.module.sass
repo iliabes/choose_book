@@ -4,7 +4,7 @@
 
 .image_block
     width: 100%
-    // height: 50vh
+
     background-color: var(--compponent-bg-default)
     filter: blur(7px)
     .window
@@ -59,7 +59,10 @@
 @include  mediaLarge
     .image_block
         height: 100%
+        justify-content: start
         .window .main_container
           height: 100vh
+          box-sizing: border-box
+          margin: 0
 
 
