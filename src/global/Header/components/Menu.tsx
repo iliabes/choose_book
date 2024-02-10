@@ -17,10 +17,10 @@ function Menu (props:{show:boolean,switchMenu:()=>void}) {
     return (
         <div className={classNames(s.menu,{[s.menu_inactive]:!showMenu})}>
             <ul className={s.menu_cont}>
-                <a onClick={()=>{switchMode()}} className={s.menu_item}>Сменить тему</a>
-                <Link to='/best' className={s.menu_item}>Топ книг</Link>
-                <Link to='/random' className={s.menu_item}>Случайная книга</Link>
-                <Link to='/home' className={s.menu_item} >Выбрать книгу</Link>
+                <a onClick={()=>{switchMode();props.switchMenu()}} className={s.menu_item}>Сменить тему</a>
+                <Link onClick={()=>{props.switchMenu()}} to='/best' className={s.menu_item}>Топ книг</Link>
+                <Link onClick={()=>{props.switchMenu()}} to='/random' className={s.menu_item}>Случайная книга</Link>
+                <Link onClick={()=>{props.switchMenu()}} to='/home' className={s.menu_item} >Выбрать книгу</Link>
                 <a onClick={()=>{props.switchMenu()}} className={s.item_cancel} >x</a>
             </ul>
         </div>
