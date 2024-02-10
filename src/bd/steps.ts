@@ -248,7 +248,7 @@ const steps:ISteps[] = [
                 ansver:   'Да'                      
             },
             {   
-                ansverID:['book', 0],
+                ansverID:['book', 20],
                 ansver:   'Нет'                      
             },
             {   
@@ -266,11 +266,11 @@ const steps:ISteps[] = [
                 ansver:   'Да'                      
             },
             {   
-                ansverID:['book', 0],
+                ansverID:['book', 6],
                 ansver:   'Нет'                      
             },
             {   
-                ansverID:['book', 0],
+                ansverID:['book', 20],
                 ansver:   'Возможно'                      
             },
         ]

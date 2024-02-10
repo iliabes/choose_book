@@ -1,6 +1,6 @@
 import {IBooks} from  './../type/type'
 
- const books:IBooks[] = [
+const books:IBooks[] = [
     {
         id:0,
         title:'Имя ветра',
